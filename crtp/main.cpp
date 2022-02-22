@@ -1,6 +1,7 @@
 #include <iostream>
 #if defined _DEBUG && !defined NDEBUG
-#	include <vld.h>
+#	pragma comment( lib, "C:/Program Files (x86)/Visual Leak Detector/lib/Win64/vld.lib" )
+#	include <C:/Program Files (x86)/Visual Leak Detector/include/vld.h>
 #endif
 
 
@@ -156,6 +157,5 @@ int main()
 	//	<< tp2.parsers
 	//	<< '\n';
 
-	std::system( "pause" );
-	return EXIT_SUCCESS;
+	return 0;
 }
